@@ -1,6 +1,7 @@
 "use client";
 import { Card } from "@/components/ui/card";
 import Image from 'next/image';
+
 const skills = [
   {
     category: "Frontend",
@@ -56,7 +57,9 @@ export function Skills() {
                   <Image 
                     src={item.logo} 
                     alt={item.name} 
-                    className="w-5 h-5 object-contain"
+                    width={20}
+                    height={20}
+                    className="object-contain"
                   />
                   <span className="text-gray-300">{item.name}</span>
                 </div>
