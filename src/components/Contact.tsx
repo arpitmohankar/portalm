@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin, Twitter,Instagram,XIcon, } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter,Instagram, } from "lucide-react";
 
 interface FormData {
     name: string;
@@ -17,6 +17,8 @@ export function Contact() {
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+     
+
 
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         setIsSubmitting(true);
@@ -36,7 +38,7 @@ export function Contact() {
           } else {
             setSubmitStatus('error');
           }
-        } catch (error) {
+        } catch {
           setSubmitStatus('error');
         } finally {
           setIsSubmitting(false);
@@ -106,7 +108,7 @@ export function Contact() {
 
         <Card className="animate-trail bg-black/20 border border-gold-500/30 p-6 flex flex-col items-center justify-center space-y-6">
           <div className="text-center space-y-2">
-            <h3 className="text-xl font-semibold text-gold-400">Let's Connect!</h3>
+            <h3 className="text-xl font-semibold text-gold-400">Lets Connect!</h3>
             <p className="text-gray-400">Open for opportunities and collaborations</p>
           </div>
           

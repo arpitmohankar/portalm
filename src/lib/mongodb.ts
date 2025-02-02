@@ -1,25 +1,31 @@
 // lib/mongodb.ts
 import mongoose from 'mongoose';
 
+interface MongooseCache {
+  conn: typeof mongoose | null;
+  promise: Promise<typeof mongoose> | null;
+}
+
+// Properly extend the NodeJS.Global interface
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose: MongooseCache | undefined;
+}
+
 const MONGODB_URI = process.env.MONGODB_URI!;
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
 }
 
-interface MongooseCache {
-  conn: typeof mongoose | null;
-  promise: Promise<typeof mongoose> | null;
-}
+const cached: MongooseCache = global.mongoose || {
+  conn: null,
+  promise: null,
+};
 
-declare global {
-  var mongoose: MongooseCache;
-}
-
-let cached: MongooseCache = global.mongoose || { conn: null, promise: null };
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
+// In development, we want to keep the mongoose global reference
+if (process.env.NODE_ENV !== 'production') {
+  global.mongoose = cached;
 }
 
 async function dbConnect() {

@@ -17,7 +17,7 @@ export function SplashScreen({ isVisible }: { isVisible: boolean }) {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-gold-500 mb-8 text-center"
           >
-            Welcome to Arpit's Portfolio
+            Welcome to Arpits Portfolio
           </motion.div>
 
           <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">

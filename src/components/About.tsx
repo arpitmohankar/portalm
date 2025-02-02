@@ -1,9 +1,8 @@
 // src/components/About.tsx
 'use client';
-import { motion, view } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis,ResponsiveContainer } from 'recharts';
 import Image from 'next/image';
-import { Sidebar } from '@/components/Sidebar';
 
 const skillsData = [
   { name: 'Frontend', value: 25 },

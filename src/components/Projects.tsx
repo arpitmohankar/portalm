@@ -1,7 +1,7 @@
 "use client";
 import { Card } from '@/components/ui/card';
 import Image from 'next/image';
-import { Github, Link2,Projector } from 'lucide-react';
+import { Github, Link2 } from 'lucide-react';
 
 const projects = [
   {

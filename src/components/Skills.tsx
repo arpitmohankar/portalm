@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@/components/ui/card";
-
+import Image from 'next/image';
 const skills = [
   {
     category: "Frontend",
@@ -53,7 +53,7 @@ export function Skills() {
             <div className="flex flex-wrap gap-3">
               {skill.items.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 px-4 py-2 bg-gold-500/10 rounded-full">
-                  <img 
+                  <Image 
                     src={item.logo} 
                     alt={item.name} 
                     className="w-5 h-5 object-contain"

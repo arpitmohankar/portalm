@@ -1,7 +1,7 @@
 'use client';
-import { useState, Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import { motion } from 'framer-motion';
-import { Home, User, Briefcase, Code2, Mail,Cpu } from 'lucide-react';
+import { User, Briefcase, Code2, Mail,Cpu } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
