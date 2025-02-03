@@ -3,6 +3,7 @@
 import { motion} from 'framer-motion';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis,ResponsiveContainer } from 'recharts';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const skillsData = [
   { name: 'Frontend', value: 25 },
@@ -56,6 +57,19 @@ export function About({ setActiveTab }: AboutProps) {
       transition={{ duration: 0.8 }}
       className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 h-[calc(100vh-4rem)]"
     >
+      <Head>
+        <title>Arpit | Full Stack Developer & DevOps Engineer</title>
+        <meta 
+          name="description" 
+          content="Portfolio of Arpit, a Full Stack Developer and DevOps Engineer specializing in React, Node.js, AWS, and devops."
+        />
+        <meta property="og:title" content="Arpit | Full Stack Developer & DevOps Engineer" />
+        <meta 
+          property="og:description" 
+          content="Explore Arpit's portfolio showcasing web development and DevOps projects."
+        />
+        <meta property="og:image" content="https://i.ibb.co/S7KpxzXK/amimg.jpg" />
+      </Head>
       {/* Left Column */}
       <div className="space-y-8 ">
         <motion.div

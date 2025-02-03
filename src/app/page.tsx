@@ -64,6 +64,22 @@ export default function Home() {
   </div>
 </div>
       </motion.div>
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arpit",
+    "jobTitle": "Full Stack Developer & DevOps Engineer",
+    "url": "https://arpitsocials.in",
+    "sameAs": [
+      "https://www.linkedin.com/in/arpit-mohankar-shroams",
+      "https://github.com/arpitmohankar/"
+    ],
+    "skills": ["React", "Node.js", "AWS", "Docker","DevOps","Mongo/SQL"],
+    "alumniOf": "Parul University",
+    "description": "Portfolio of Arpit, a Full Stack Developer and DevOps Engineer."
+  })}
+</script>
     </main>
   );
 }

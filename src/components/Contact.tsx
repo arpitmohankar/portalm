@@ -6,6 +6,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Github, Linkedin, Twitter,Instagram, } from "lucide-react";
+import Head from 'next/head';
 
 interface FormData {
     name: string;
@@ -47,6 +48,13 @@ export function Contact() {
       
   return (
     <div className="space-y-8 ">
+      <Head>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yourhandle" />
+  <meta name="twitter:title" content="Arpit | Portfolio" />
+  <meta name="twitter:description" content="Full Stack Developer & DevOps Engineer" />
+  <meta name="twitter:image" content="https://i.ibb.co/S7KpxzXK/amimg.jpg" />
+</Head>
       <h2 className="text-3xl font-bold text-gold-500 flex items-center gap-2">
         <Mail className="w-6 h-6" /> Contact
       </h2>
