@@ -17,7 +17,7 @@ const experiences = [
   {
     company: "PU AI SOCIETY, Parul University",
     role: "Backend Developer (On-site Paid)",
-    duration: "June 2024 - Present",
+    duration: "June 2024 - Jan 2025",
     points: [
       "Built Event/Hackathon Registration System with Email Notifications",
       "Developed Admin Panel and BotPress Chatbot integration",
