@@ -6,7 +6,7 @@ const experiences = [
   {
     company: "Valueye Technologies, Mumbai",
     role: "Full Stack Developer (Remote Paid)",
-    duration: "Sep 2024 - Dec 2024",
+    duration: "Sep 2024 - Present",
     points: [
       "Developed Rich WhatsApp Editor using React Draft JS and Material UI",
       "Implemented WhatsApp Bulk Messaging Service with Google Sheet API",
