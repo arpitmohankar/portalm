@@ -10,7 +10,8 @@ const experiences = [
     points: [
       "Developed Rich WhatsApp Editor using React Draft JS and Material UI",
       "Implemented WhatsApp Bulk Messaging Service with Google Sheet API",
-      "Created WhatsApp Template Creator with S3 bucket integration"
+      "Created WhatsApp Template Creator with S3 bucket integration",
+      "Current - Working on Side Project(Backend) - Housing Valuation System for Local Banks"
     ]
   },
   {
