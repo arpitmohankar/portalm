@@ -13,6 +13,18 @@ const projects = [
     image: '/assets/projects/solarpfaucet.png'
   },
   {
+    title: 'Shehealth',
+    desc: 'Next Gen Personalized Wellness',
+    tech: ['Next.js 15'
+      ,'TypeScript'
+      ,'Tailwind'
+      ,'Shadcn UI'
+      ,'Spline 3D'],
+    github: 'https://github.com/arpitmohankar/shehealth.git',
+    live: 'https://shehealth.arpitsocials.in/',
+    image: '/assets/projects/shehealth.png'
+  },
+  {
     title: 'AMoogle',
     desc: 'Clone of Omegle for random video chatting with strangers',
     tech: ['WebRTC', 'Socket.io', 'RTCPeerConnection'],
