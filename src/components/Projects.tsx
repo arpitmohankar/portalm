@@ -5,6 +5,14 @@ import { Github, Link2 } from 'lucide-react';
 
 const projects = [
   {
+    title: 'FoldamTree',
+    desc: 'Extract Folder-File Structure of Project By Right-Clicking on VS code Explorer.',
+    tech: ['Typescript', 'Node.js inbuilt modules'],
+    github: 'https://github.com/arpitmohankar/foldamTree',
+    live: 'https://marketplace.visualstudio.com/items?itemName=arpitmohankar.foldamtree',
+    image: '/assets/projects/foldamtree.png'
+  },
+  {
     title: 'SolarpFaucet',
     desc: 'Airdrop Solana in Devnet Wallet',
     tech: ['React', 'Node.js', 'MongoDB'],
