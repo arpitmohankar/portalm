@@ -5,6 +5,14 @@ import { Github, Link2 } from 'lucide-react';
 
 const projects = [
   {
+    title: 'LogiAi',
+    desc: 'AI-Powered Logistics Management System.',
+    tech: ['Javascript', 'React', 'Python', 'G cloud APIs'],
+    github: 'https://github.com/arpitmohankar/Logi.Ai',
+    live: 'https://logiai.arpitsocials.in/',
+    image: '/assets/projects/logiai.png'
+  },
+  {
     title: 'FoldamTree',
     desc: 'Extract Folder-File Structure of Project By Right-Clicking on VS code Explorer.',
     tech: ['Typescript', 'Node.js inbuilt modules'],
