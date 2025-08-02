@@ -109,7 +109,7 @@ export function About({ setActiveTab }: AboutProps) {
             <p>Current CGPA: 7.73</p>
             <div className="flex gap-4 justify-center mt-4">
     <a
-      href="https://docs.google.com/document/d/1qdQxsmFT5yugz0DxvlWrW42nWuHIGDWyWsujmP7lECE/edit?usp=sharing"
+      href="https://docs.google.com/document/d/1FhlOzIrAygGybj-PyiRoFFWy-wkcpVMIQKRpIYJ6O_o/edit?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="px-6 py-2 bg-gold-500/10 hover:bg-gold-500/20 text-gold-500 rounded-full transition-all border border-gold-500/30 hover:border-gold-500/50"
