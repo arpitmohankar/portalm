@@ -2,7 +2,18 @@
 import { Card } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 
-const experiences = [
+const experiences = [ 
+{
+    company: "VE Commercial Vehicles (VECV), Gurugram",
+    role: "Data Privacy Analyst (On-site)",
+    duration: "Jan 2026 - Present",
+    points: [
+      "DPDP rollout: data inventory, flow maps, ROPA, consent/notice alignment, and retention schedules.",
+      "Deployed DSPM for discovery/classification, defined policies, and drove remediation with owners.",
+      "Established privacy governance—DPIA/PIA templates, incident/breach runbooks, and SOPs; led awareness sessions.",
+      "GRC & audits: control testing, evidence, risk register, vendor assessments, and CAPA tracking."
+    ]
+  },
   {
     company: "Valueye Technologies, Mumbai",
     role: "Full Stack Developer (Remote Paid)",
